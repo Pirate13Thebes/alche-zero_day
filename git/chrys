@@ -4,13 +4,13 @@
 
 cd /alche-zero_day/git
 
-git pull origin main
+git pull origin master
 
-echo "git pull origin main" > up_to_date
+echo "git pull origin master" > up_to_date
 
 git add .
 git status
 git commit -m "How to be up to date in git"
-git push origin main
+git push origin master
 
 
