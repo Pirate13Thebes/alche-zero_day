@@ -1,0 +1,35 @@
+#!/bin/bash
+# TASK 3 - Collaboration is the base of a company
+# -----------------------------------------------
+
+cd /alche-zero_day/git
+
+# Create and switch to update_script branch
+git checkout -b update_script
+
+touch bash/98
+
+echo '#!/bin/bash' > bash/best
+echo 'echo "Best School"' >> bash/best
+
+echo '#!/bin/bash' > bash/school
+echo 'echo "The school is open!"' >> bash/school
+
+git add .
+git status
+git commit -m "My personal work"
+git push origin update_script
+
+# Switch back to master for hot fix
+git checkout master
+
+echo '#!/bin/bash' > bash/best
+echo 'echo "This School is so cool!"' >> bash/best
+
+rm -rf js
+
+git add .
+git status
+git commit -m "Hot fix"
+git push origin master
+
