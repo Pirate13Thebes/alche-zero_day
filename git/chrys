@@ -1,0 +1,16 @@
+#!/bin/bash
+# TASK 4 - Collaboration: be up to date
+# -----------------------------------------------
+
+cd /alche-zero_day/git
+
+git pull origin main
+
+echo "git pull origin main" > up_to_date
+
+git add .
+git status
+git commit -m "How to be up to date in git"
+git push origin main
+
+
