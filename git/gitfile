@@ -1,0 +1,20 @@
+#!/bin/bash
+# TASK 2 -Coding FURY Road
+# ----------------------------------------------------------------
+
+cd /alche-zero_day/git
+
+mkdir bash c js
+
+touch c/c_is_fun.c js/main.js js/index.js
+
+echo '#!/bin/bash' > bash/best
+echo 'echo "Best"' >> bash/best
+
+echo '#!/bin/bash' > bash/school
+echo 'echo "School"' >> bash/school
+
+git add .
+git status
+git commit -m "Starting to code today, so cool"
+git push origin master
